@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente</title>
+    <style>
+        .tab{
+          padding: 20;
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <img src="Delicias.png" alt="logo" style="float:left;width:150px;height:100px;">
+    <h1 style="font-size:250%; text-align:center;">Pasteleria Delicias</h1>
+    <h2 style="text-align: center; font-style: italic;">Creando a tu imaginacion</h2><br>
+    <div class="tab">
+        <a href="pasteleria.html" style="font-size: 200%; border: 2px solid rgb(0, 0, 0); padding: 10px; background-color: aqua;"><b>Inicio</b></a>
+        <a href="Cliente.html" style="font-size: 200%; border: 2px solid rgb(0, 0, 0); padding: 10px; background-color: aqua;"><b>Pedidos</b></a>
+        <a href="pastelero.html" style="font-size: 200%; border: 2px solid rgb(0, 0, 0); padding: 10px; background-color: aqua;"><b>Pastelero</b></a>
+   </div>
+   <img src="inicio.jpg" alt="Inicio" width="100%" height="300px">
+    <h2 style="text-align: center; font-style: italic;">Crea tu pastel como mas te guste</h2><br>
+    <h3>Selecciona el tipo de pastel que quieres</h3>
+    <form action="pasteleria.html">
+        <input type="radio" id="Cheesecake" name="tipo" value="Cheesecake">
+        <img src="chees.png" alt="Pastel Chocolate" style="float: left; width:200px;height: 150px; margin:10px 30px">
+        <label for="Cheesecake">Cheesecake $100</label><br>
+        <p>Originario de Grecia y después introducido a Estados unidos,
+            <br>el cheesecake hoy en día es uno de los pasteles más populares,
+            <br>e incluso hay restaurantes dedicados a venderlos. Hay diversas 
+            <br>mezclas y preparaciones, pero el principal elemento siempre ha 
+            <br>sido el queso: crema, ricotta o neufchatel.
+        </p><br><br>
+        <input type="radio" id="Tiramisú" name="tipo" value="Tiramisú">
+        <img src="tiramisu.jpg" alt="Pastel Chocolate" style="float: left; width:200px;height:150px; margin:10px 30px">
+        <label for="Tiramisú">Tiramisú $100</label><br>
+        <p>El tiramisú nació en Italia. Lo elaboran con un bizcocho de
+           <br>soletas humedecidas en café y una ligera crema a base de huevos, 
+           <br>azúcar y queso mascarpone. La receta varía dependiendo del lugar, 
+           <br>por ejemplo, en algunos restaurantes se le agrega vino Marsala o
+           <br> algún otro tipo de licor. No se sabe bien en qué parte de Italia 
+           <br>nació y hay muchas teorías de su origen, lo que sí podemos decir 
+           <br>es que su sabor y textura aterciopelada hacen de este postre uno 
+           <br>de los favoritos a nivel mundial.
+        </p><br>
+        <input type="radio" id="Tres Leches" name="tipo" value="Tres Leches">
+        <img src="pasteltresleches.jpg" alt="Pastel Chocolate" style="float: left; width:200px;height:150px; margin:10px 30px">
+        <label for="Tres Leches">Tres Leches $100</label><br>
+        <p>El pastel de tres leches es muy popular en Latinoamérica y 
+            <br>es elaborado en diferentes países como: Nicaragua, México, Venezuela,
+            <br>Colombia y Perú. Consiste en un bizcocho bañado en -como su nombre 
+            <br>lo dice- tres leches: leche condensada, leche evaporada y crema de 
+            <br>leche o lechera- de topping suele usarse el merengue y en algunos 
+            <br>países se le pone cerezas o frutos rojos.
+        </p><br><br>
+        <h3>Selecciona una decoracion</h3><br>
+        <input type="checkbox" id="cumpleaños" name="decoracion" value="Cumpleaños">
+        <label for="Cumpleaños">Cumpleaños</label><br>
+        <input type="checkbox" id="Edad" name="decoracion" value="Edad">
+        <label for="Edad">Edad</label><br>
+        <input type="checkbox" id="Animales" name="decoracion" value="Animales">
+        <label for="Animales">Animales</label><br>
+        <img src="edad.png" alt="Edad" style="width:200px;height: 150px; margin:10px 30px">
+        <img src="among.jpg" alt="Cumpleaños" style="width:200px;height: 150px; margin:10px 30px">
+        <img src="animales.jpg" alt="Animales" style="width:200px;height: 150px; margin:10px 30px"><br>
+        <h3>Completa este formulario cun tus datos</h3><br>
+        <label for="Nombre"> Nombre Completo</label><br>
+        <input type="text" id="datos" name="Nombre"><br><br>
+        <label for="tel">Teléfono</label><br>
+        <input type="tel" id="datos" name="tel" maxlength="10"><br><br>
+        <label for="correo">Correo</label><br>
+        <input type="email" id="datos" name="correo"><br><br>
+        <label for="Descripcion">Descripcion del pedido</label><br>
+        <input type="text" id="datos" name="Descripcion"><br><br>
+        <input type="submit" value="Completar pedido">
+    </form>
+</body>
